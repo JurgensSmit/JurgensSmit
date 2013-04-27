@@ -1,4 +1,8 @@
 class BlogsController < ApplicationController
+
+  # Oh, no. Why are you looking at this?
+  http_basic_authenticate_with :name => "JurgensSmit", :password => "Please do not fuck my shit up", :except => [:index, :show]
+ 
   # GET /blogs
   # GET /blogs.json
   def index
@@ -52,6 +56,7 @@ class BlogsController < ApplicationController
       end
     end
   end
+
 
   # PUT /blogs/1
   # PUT /blogs/1.json

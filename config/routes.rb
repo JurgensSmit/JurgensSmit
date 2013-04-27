@@ -4,7 +4,7 @@ JurgensSmit::Application.routes.draw do
 
 root :to => "home#index"
 
-  resources :blog
+  resources :blogs
 
 get "about/index", :id => "about"
  match "about" => "about#index"
