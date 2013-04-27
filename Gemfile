@@ -36,3 +36,10 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem "thin", ">= 1.5.0"
+gem "rspec-rails", ">= 2.12.2", :group => [:development, :test]
+gem "database_cleaner", ">= 1.0.0.RC1", :group => :test
+gem "email_spec", ">= 1.4.0", :group => :test
+gem "bootstrap-sass", ">= 2.3.0.0"
+gem "simple_form", ">= 2.1.0"
