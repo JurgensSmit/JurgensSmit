@@ -16,7 +16,19 @@ module JurgensSmit
     config.generators do |g|
       g.test_framework :rspec
       
-      
+config.action_mailer.smtp_settings = {
+  :address => "smtp.gmail.com",
+  :port => 587,
+  :domain => "jurgenssmit.com",
+  :user_name => "fizzlelop@gmail.com",
+  :password => "nope!",
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
+
+config.action_mailer.default_url_options = {
+  :host => "jurgenssmit.com"
+}
       
       
       g.view_specs false
@@ -51,7 +63,7 @@ module JurgensSmit
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters += [:password]
+    config.filter_parameters += [:password, :password_confirmation]
 
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true

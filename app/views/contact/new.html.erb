@@ -1,0 +1,48 @@
+
+                <!-- Page Title -->
+        <div class="page-title">
+<i class="icon-envelope-alt page-title-icon"></i>
+<h2>Contact me</h2>
+</div>
+
+        <!-- Contact Us -->
+
+        <div class="contact-us container">
+            <div class="row">
+                <div class="contact-form span5">
+<%= form_for @message, :url => contact_path do |form| %>
+  <fieldset class="fields">
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, :placeholder => "Enter your name...", :autofocus => true %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :email %>
+      <%= form.text_field :email, :placeholder => "Enter your email..." %>
+    </div>
+    <div class="field">
+      <%= form.label :subject %>
+      <%= form.text_field :subject, :placeholder => "Your subject..." %>
+
+    </div>
+    
+    <div class="field">
+      <%= form.label :Message %>
+      <%= form.text_area :body, :placeholder => "Your message..." %>
+    </div>
+  </fieldset>
+  
+  <fieldset class="actions">
+    <%= form.submit "Send" %>
+  </fieldset>
+<% end %>
+                </div>
+                <div class="contact-address span2">
+                    <h4>I am here</h4>
+                    <iframe width="350" height="435" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=sydney&amp;aq=&amp;sll=-33.796924,150.922433&amp;sspn=2.380518,5.545349&amp;ie=UTF8&amp;hq=&amp;hnear=Sydney+New+South+Wales&amp;ll=-33.867487,151.20699&amp;spn=0.148656,0.346584&amp;t=m&amp;z=13&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.au/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=sydney&amp;aq=&amp;sll=-33.796924,150.922433&amp;sspn=2.380518,5.545349&amp;ie=UTF8&amp;hq=&amp;hnear=Sydney+New+South+Wales&amp;ll=-33.867487,151.20699&amp;spn=0.148656,0.346584&amp;t=m&amp;z=13" style="color:#0000FF;text-align:left">View Larger Map</a></small>>
+
+                </div>
+            </div>
+        </div>
+

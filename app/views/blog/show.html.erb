@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<!-- Blog text Text -->
+        <div class="about-us container">
+            <div class="row">
+                <div class="about-us-text span5">
+<br>
+<h4> <td><%= @blog.title %></td> </h4>
+<p>
+ <br>
+<td><%= raw @blog.content %></td>
+</p>
+<br>
+
+
+<div class="blog_links">
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blog_path %>
+
+</div>
+
+
+<div class="social_blog_links">
+<a href="https://www.facebook.com/jurgens.smit"><i class="icon-facebook"></i> </a>&nbsp;
+<a href="https://twitter.com/JurgensSmit"><i class="icon-twitter"></i> </a></i> &nbsp;
+<a href="https://plus.google.com/101612517160357782271/posts"><i class="icon-google-plus"></i> </a></i> &nbsp;
+<a href="https://github.com/JurgensSmit"><i class="icon-github"></i> </a></i> &nbsp;
+</div>
+
+
+<!--* * * Disqus* * *-->
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+  var disqus_shortname = 'jurgens';
+ (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+    </style>
+  </head>
+  <body>
+                </div>
+            </div>
+        </div>
