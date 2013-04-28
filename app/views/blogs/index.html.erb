@@ -19,20 +19,17 @@
 
 <!-- Blog Entries -->
 <div class="show_blog_links">
-        <td><%= link_to 'Show more...', blog_path(blog) %></td>
+
 </div>
 <br>
-<div class="blog_links">
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>&nbsp; <%= link_to 'New Blog', new_blog_path %>&nbsp;
-        <td><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>&nbsp;
-      </div>
+
 <div class="social_blog_links">
 <a href="https://www.facebook.com/jurgens.smit"><i class="icon-facebook"></i> </a>&nbsp;
 <a href="https://twitter.com/JurgensSmit"><i class="icon-twitter"></i> </a></i> &nbsp;
 <a href="https://plus.google.com/101612517160357782271/posts"><i class="icon-google-plus"></i> </a></i> &nbsp;
 <a href="https://github.com/JurgensSmit"><i class="icon-github"></i> </a></i> &nbsp;
 </div>
-           <% end %>
+
     </style>
   </head>
   <body>
