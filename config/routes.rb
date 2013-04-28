@@ -1,4 +1,6 @@
 JurgensSmit::Application.routes.draw do
+  get "blog/index"
+
 resources :blogs
 
 root :to => "home#index"

@@ -1,51 +1,128 @@
-<!-- Page Title -->
-        <div class="page-title">
-            <div class="container">
-                <div class="row">
-                    <div class="span9">
-                        <i class="icon-comments page-title-icon"></i>
-                        <h2>Blog</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<!-- Blog text Text -->
-        <div class="about-us container">
-            <div class="row">
-                <div class="about-us-text span9">
-
-            <% @blog.each do |blog| %>
-
-           <h4> <td><%= blog.title %></td> </h4>
-          <p>
-            
-           <td><%= raw blog.content %></td>
-           </p>
-           <br>
-
-<!-- Blog Entries -->
-<div class="show_blog_links">
-        <td><%= link_to 'Show more...', blog_path(blog) %></td>
+ <!-- Page Title -->
+ <div style="margin:0 auto">
+ <div class="page-title">
+<i class="icon-comments page-title-icon"></i>
+<h2>Blog</h2>
 </div>
+</div>
+<!-- Blog text Text -->
+<h4> <td>A brief introduction</td> </h4>
+<p>
+<td>My name is Jurgens Smit. My background is in System
+engineering, originally I’m from Cape Town, South Africa. I enjoy traveling,
+solving problems, and being outdoors.
+
+<p>Currently I’m in Sydney, and I’m really enjoying exploring
+all the social and cultural aspects of the city.</p>
+
+<p>I believe software and the internet has an amazing ability
+to transform the world for the better. In whatever small and insignificant way
+possible, I want to be one of the people building software to bring about those
+solutions.</p>
+
+<p>This blog will be dedicated to my personal journey of
+becoming a programmer.</p></td>
+</p>
 <br>
-<div class="blog_links">
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>&nbsp; <%= link_to 'New Blog', new_blog_path %>&nbsp;
-        <td><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>&nbsp;
-      </div>
 <div class="social_blog_links">
 <a href="https://www.facebook.com/jurgens.smit"><i class="icon-facebook"></i> </a>&nbsp;
 <a href="https://twitter.com/JurgensSmit"><i class="icon-twitter"></i> </a></i> &nbsp;
 <a href="https://plus.google.com/101612517160357782271/posts"><i class="icon-google-plus"></i> </a></i> &nbsp;
 <a href="https://github.com/JurgensSmit"><i class="icon-github"></i> </a></i> &nbsp;
 </div>
-           <% end %>
+<h4> Why Sydney Dev Camp? </h4>
+<p>
+I’m strongly motivated by a desire to learn and better
+myself in everything I do.
 
+</p><p>I tried learning online, through books and a lot of really
+good resources. I found out that wasn’t the right approach for me. It was hard
+to keep motivated.</p>
 
+<p>Nothing is comparable to setting your life aside and moving
+to another continent to immerse yourself in learning a new skill for 10 weeks.
+It is amazing being with likeminded people who are trying to change their lives
+and being part of a great community.</p>
 
-    </style>
-  </head>
-  <body>
-                </div>
-            </div>
-        </div>
+<p>The most exciting thing is that I have the ability to change
+the world, from my keyboard. This is how I came to be at Sydney Dev Camp.</p>
+<p></p>
+<br>
+<div class="social_blog_links">
+<a href="https://www.facebook.com/jurgens.smit"><i class="icon-facebook"></i> </a>&nbsp;
+<a href="https://twitter.com/JurgensSmit"><i class="icon-twitter"></i> </a></i> &nbsp;
+<a href="https://plus.google.com/101612517160357782271/posts"><i class="icon-google-plus"></i> </a></i> &nbsp;
+<a href="https://github.com/JurgensSmit"><i class="icon-github"></i> </a></i> &nbsp;
+</div>
+<h4> Sydney. </h4>
+<p>
+I like to seek out and pursue experiences and I’m really
+enjoying all the social and cultural aspects Sydney has to offer.
+<p>I don’t always realize I’m in Sydney, since I spend all my
+time coding. I’ve been exploring the city on the odd day, including a trip to
+the Blue Mountains. I’ve been extremely fortunate in meeting amazing people and
+sharing unforgettable adventures with them.</p>
+
+<p>I don’t think I’ll ever get used to the fact that it rains
+most days and the bizarre sounds of the birds. I’m currently investigating the
+awful sound in the morning, I think it’s a crow.</p>
+<br>
+    <%= image_tag "blue_mountains.jpg"%>
+    <br>
+    <br>
+
+<div class="social_blog_links">
+<a href="https://www.facebook.com/jurgens.smit"><i class="icon-facebook"></i> </a>&nbsp;
+<a href="https://twitter.com/JurgensSmit"><i class="icon-twitter"></i> </a></i> &nbsp;
+<a href="https://plus.google.com/101612517160357782271/posts"><i class="icon-google-plus"></i> </a></i> &nbsp;
+<a href="https://github.com/JurgensSmit"><i class="icon-github"></i> </a></i> &nbsp;
+</div>
+<h4> My experiences so far. </h4>
+<p>
+I wake up and can’t wait to get to Sydney Dev Camp.
+
+</p><p>I’m consistently being pushed to my limits, learning more
+than ever before all while having more fun than I ever thought possible.</p>
+
+<p>My experience overall has been great. I have learned more
+than I thought was possible, I have made friends for life and have worked on
+various interesting projects.</p>
+
+<p><br></p>
+
+<p><em>I want to do more, to be more
+and to build more.</em></p>
+<p></p>
+<div class="social_blog_links">
+<a href="https://www.facebook.com/jurgens.smit"><i class="icon-facebook"></i> </a>&nbsp;
+<a href="https://twitter.com/JurgensSmit"><i class="icon-twitter"></i> </a></i> &nbsp;
+<a href="https://plus.google.com/101612517160357782271/posts"><i class="icon-google-plus"></i> </a></i> &nbsp;
+<a href="https://github.com/JurgensSmit"><i class="icon-github"></i> </a></i> &nbsp;
+</div>
+<h4>Week 3. </h4>
+<p>
+ <br>
+<em>It has been 3 weeks since I started the program, it seems like I have
+been here for months.</em>
+
+</p><p>I am putting 12+ hours a day of coding and the only thing that makes it
+possible is the fact that I am surrounded with people with the same passion for
+learning that I have. I am completely focused on the course and putting
+everything into it.</p>
+
+<p>There will always be something new to learn, some new technology or some new
+technique to take advantage of. This is only the beginning.</p>
+
+<p><em><b>Understanding when to work
+long hours and when to take it easy is definitely a learning process</b>.</em>
+<br>
+</br>
+    <%= image_tag "OperaHouse.jpg"%>
+    <div class="social_blog_links">
+<a href="https://www.facebook.com/jurgens.smit"><i class="icon-facebook"></i> </a>&nbsp;
+<a href="https://twitter.com/JurgensSmit"><i class="icon-twitter"></i> </a></i> &nbsp;
+<a href="https://plus.google.com/101612517160357782271/posts"><i class="icon-google-plus"></i> </a></i> &nbsp;
+<a href="https://github.com/JurgensSmit"><i class="icon-github"></i> </a></i> &nbsp;
+</div>
+</div>
+ 
