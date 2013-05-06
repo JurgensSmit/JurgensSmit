@@ -25,3 +25,4 @@ gem "binding_of_caller", ">= 0.7.1", :group => :development, :platforms => [:mri
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 gem "font-awesome-rails"
 gem 'wysihtml5-rails'
+gem 'newrelic_rpm'
