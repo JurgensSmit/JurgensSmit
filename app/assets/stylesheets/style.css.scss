@@ -186,8 +186,8 @@ strong { font-weight: bold; }
 
 .what-we-do .service {
     padding-bottom: 23px;
-    background: #f8f8f8;
-    border-bottom: 2px solid #9d426b;
+    background: #ffffff ;
+    border-bottom: 0px solid #9d426b;
 }
 
 .what-we-do .service:hover {
@@ -202,8 +202,8 @@ strong { font-weight: bold; }
 }
 
 .what-we-do .service .icon-awesome {
-    margin-top: 15px;
-    font-size: 50px;
+    margin-top: 55px;
+    font-size: 70px;
     line-height: 50px;
     color: #5d5d5d;
 }
@@ -223,7 +223,7 @@ strong { font-weight: bold; }
 }
 
 .what-we-do .service a {
-    padding: 5px 22px;
+    padding: 5px 32px;
     background: #9d426b;
     color: #fff;
     font-style: italic;
@@ -328,13 +328,18 @@ footer .widget i {
 
 /* ----- About us text ----- */
 
+
 .about-us {
     margin-top: 20px;
+     width: 40%;
+  max-width: 460px;
 }
 
 .about-us-text {
     padding: 10px 0;
     text-align: left;
+
+
 }
 
 .about-us-text h4 {
@@ -607,38 +612,3 @@ footer .widget i {
         0 5px 10px 0 rgba(0,0,0,.15) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
 }
-
-
-/********** ----- PORTFOLIO PAGE ----- **********/
-
-.portfolio-page {
-    margin-top: 20px;
-    padding-bottom: 50px;
-}
-
-.portfolio-page h4.filter-portfolio {
-    margin-top: 35px;
-    padding: 0 20px;
-    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    color: #5d5d5d;
-    text-align: left;
-    text-transform: uppercase;
-    text-shadow: 0 1px 0 rgba(255,255,255,.7);
-}
-
-ul.portfolio-img {
-    margin: 0;
-    overflow: hidden;
-}
-
-ul.portfolio-img li {
-    list-style: none;
-}
-
-.filter-portfolio a { color: #5d5d5d; text-decoration: none; }
-.filter-portfolio a:hover { color: #9d426b; text-decoration: none; }
-
-.filter-portfolio a#active-imgs { color: #9d426b; }
-.filter-portfolio a#active-imgs:hover { color: #5d5d5d; }
-
