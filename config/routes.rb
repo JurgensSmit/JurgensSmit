@@ -1,12 +1,6 @@
 JurgensSmit::Application.routes.draw do
 
-
-resources :blogs
-
 root :to => "home#index"
-
-get "blog/index", :id => "blog"
-match "blog" => "blog#index"
 
 get "about/index", :id => "about"
  match "about" => "about#index"
